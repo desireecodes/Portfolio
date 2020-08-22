@@ -4,262 +4,242 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="pink.css">
-    <title>Desiree Developer - Portfolio</title>
+    <link rel="stylesheet" href="purple.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Portfolio</title>
 </head>
 <body>
-    <div class="main-container">
-        <!--Aside-->
-        <div class="aside">
-            <!--Logo-->
-        <div class="logo">
-            <a href="#">desireecodes</a>
-        </div>
-        <!--Nav Toggler Btn-->
-        <div class="nav-toggler">
-            <span></span>
-    
-        </div>
-        <!--Nav-->
-            <ul class="nav">
-                <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
-                    <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
-                        <li><a href="#projects"><i class="fa fa-briefcase"></i> Projects</a></li>
-                        <li><a href="#skills"><i class="fa fa-envelope"></i> Skills</a></li>
-                        <li><a href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
+<header>
+   
+<!--Logo-->
+<div class="logo">
+    <a href="#">desireecodes</a>
+</div>
+<!--Side Bar-->
+<nav class="top-nav">
+    <div id="mySidenav mySidenav-expand-md sticky-top" class="sidenav">
+        <!--Side Navigator-->
+        <ul>
+        <li data-text="Home"><a href="#home" id="home">Home</a></li>
+        <li data-text="About"><a href="#about" id="about">About</a></li>
+        <li data-text="Services"><a href="#services" id="services">Services</a></li>
+        <li data-text="Portfolio"><a href="#portfolio" id="portfolio">Portfolio</a></li>
+        <li data-text="Contact"><a href="#contact" id="contact">Contact</a></li>
+    </ul>
+    </div>
+</nav>
+<!--Side Bar End-->
+<!--Home Page -->
+    <div class="landing-text">
+        <h1>Welcome!</h1>
+    </div>
+</header>
+<!--Home Page End-->
+<!--About-->
+<section class="about" id="about">
+    <div class="container">
+        <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
+        <img src="Desiree-home.jpg" alt="profile picture" >
+    </div>
+        <div class="about-details"data-aos="fade-left" data-aos-delay="600">
+            <div class="about-heading">
+            <h1>About</h1>
+            <h6>Myself</h6>
+    </div>
+    <p>
+        Welcome! My name is Desiree. I am completing a six-month intense bootcamp with 
+        Coding Black Females to acquire the skills and knowledge to become a <span>Full Stack Developer</span>.
+        Currently, I am studying for the AWS Cloud Parctitioner certification and will take my first exam in September 2020. <br>
+           <br>
+        Whilst studying for my law degree, I was very curious about coding.
+        Like law, coding is based on logic and reasoning, and is about finding solutions to practical 
+        problems. After completing my masters in law, I decided to give it a go and started to 
+        learn how to code. I have been coding for many months and created a few projects. 
+         </p>
+         <!--Social Media links-->
+         <div class="social-media">
+            <ul class="nav-list">
+                <li>
+                    <a href="#" class="icon-link">
+                        <i class="fa fa-twitter-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="icon-link">
+                        <i class="fa fa-linkedin-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="icon-link">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                </li>
             </ul>
-            <!--Copyright-->
-      <div class="copyright-text">
-       &copy; 2020 Created by Desiree Usifo
+        </div>
+        
+    <!--Social Media links End-->
+     </div>
+ </div>
+</section>
+<!--About End-->
+<!--Services-->
+<section class="services" id="services">
+    <div class="container">
+        <div class="section-heading">
+            <h1>Services</h1>
+            <h6>What I can do for you</h6>
+        </div>
+        <div class="my-skills">
+            <div class="skill" data-aos="fade-in" data-aos-delay="300">
+                <div class="icon-container">
+                    <i class="fa fa-laptop"></i>
+                </div>
+                <h1>Web Design</h1>
+                <p>
+                    <ul>
+                        <li>Creative ideas</li>
+                        <li>Engaging features</li>
+                        <li>Responsive Web Design</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="skill" data-aos="fade-in" data-aos-delay="600">
+                <div class="icon-container">
+                    <i class="fa fa-code"></i>
+                </div>
+                <h1>Web Development</h1>
+                <p>
+                    <ul>
+                        <li>Creative ideas</li>
+                        <li>Engaging features</li>
+                        <li>Responsive Web Design</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="skill" data-aos="fade-in" data-aos-delay="900">
+                <div class="icon-container">
+                    <i class="fa fa-shopping-bag"></i>
+                </div>
+                <h1>E-commerce</h1>
+                <p>
+                    <ul>
+                        <li>Great UX/UI experience</li>
+                        <li>Engaging features</li>
+                        <li>Responsive Web Design</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Services End-->
+<!--Portfolio-->
+<section class="portfolio" id="portfolio">
+    <div class="container">
+        <div class="section-heading">
+            <h1>Portfolio</h1>
+            <h6>My recent projects</h6>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+        <div class="card">
+            <div class="slider-image">
+                <img src="Project picture.PNG" alt="project">
+            </div>
+            <div class="content">
+                <h2>This Website</h2>
+                <p1>This site was created to share my work and to introduce myself.jndjndenkdjejedjkdnnksjkjdd fbwf ufewnjw ffwe ojeufowef oifewkj ifewo
+                </p1>
+                <br>
+                <br>
+                <h3>Skills Used</h3>
+            </div>
+            <div class="slider-technology">
+                <img src="Skills images/HTML image.jpg" alt="HTMl">
+                <img src="Skills images/CSS image.jpg" alt="CSS">
+                <img src="Skills images/JavaScript image.jpg" alt="JavaScript">
+                <img src="Skills images/jquery.png" alt="Jquery">
+                
+            </div>
+            <div class="card-links">
+                <button class="button box-shadow left-button">
+                    <i class="fa fa-desktop"></i>
+                <a href="#">VIEW SITE</a></li>
+                </button>
+                <button class="button box-shadow right-button">
+                    <i class="fa fa-github"></i>
+                <a href="#">VIEW CODE</a>
+            </button>
+            </div>
+        </div>
+        </div>
+     </div>
     </div>
 </div>
-      <!--Aside End-->
-      <!--Main Content-->
-      <div class="main-content">
-          <!--Home Section--> 
-          <section class="home section hidden" id="home">
-              <div class="container">
-                 <div class="intro">
-                     <img src="C:\Users\desir\OneDrive\Pictures\Projects\Desiree-home.jpg" alt="profile" class="shadow-dark">
-                     <h1>Hi, my name is Desiree</h1>
-                     <p>I'm a <span>Full Stack Developer</span>.</p>
-                     <div class="social-links">
-                         <a href="#"><i class="fa fa-twitter"></i></a>
-                         <a href="#"><i class="fa fa-instagram"></i></a>
-                         <a href="#"><i class="fa fa-linkedin"></i></a>
-        
-                     </div>
-                 </div> 
-              </div>
-          </section>
-          <!--Home Section end-->
-
-          <!--About Section-->
-          <section class="about section hidden" id="about">
-              <div class="container">
-                  <div class="row">
-                      <div class="section-title padd-15">
-                          <h2>Get to know me</h2>
-                      </div>
-                  </div>
-                  <div class="row">
-                      <div class="about-content padd-15">
-                          <div class="about-text padd-15">
-                            <p>Aloha! My name is Desiree. I am completing a six-month intense bootcamp with 
-                             Coding Black Females to acquire the skills and knowledge to become a <span>Full Stack Developer</span>.
-                             Currently, I am studying for the AWS Cloud Parctitioner certification and will take my first exam in September 2020. <br>
-                                <br>
-                            Whilst studying for my law degree, I was very curious about coding.
-                            Like law, coding is based on logic and reasoning, and is about finding solutions to practical 
-                            problems. After completing my masters in law, I decided to give it a go and started to 
-                            learn how to code. I have been coding for many months and created a few projects. 
-                              </p>
-                          </div>
-                          <div class="row">
-                              <div class="buttons padd-15">
-                                  <a href="#" class="btn" id="projects">Have a look!</a>
-                              </div>
-                          </div>
-                        </div>
-                  </div>
-              </div>
-          </section>
-          <!--About Section end-->
-          <!--Portfolio Section-->
-          <section class="project section hidden" id="projects">
-              <div class="container">
-                  <div class="row">
-                      <div class="section-title padd-15">
-                          <h2>Projects</h2>
-                      </div>
-                  </div>
-                  <div class="row">
-                      <div class="project-filter padd-15">
-                          <button type="button" class="active" data-filter="all">All</button>
-                          <button type="button" data-filter="web-development">Web development</button>
-                          <button type="button" data-filter="e-commerce">E-Commerce</button>
-                          <button type="button" data-filter="programming">Just For Fun</button>
-                      </div>
-                      
-                    </div>
-                    <div class="row">
-                        <!--Project Items Cards--> 
-                        <div class="card">
-                            <div class="card-image"></div>
-                            <div class="card-text">
-                                <h5>Web Development</h5>
-                                <p>My Personal Portfolio to show off my projects. Language Used (HTML, CSS and JavaScript icons)</p>
-                            </div>
-                            <div class="card-links">
-                                    <a href="#" class="links" id="#">View Project</a>
-                                    <a href="#" class="links" id="#">View Code</a>
-                                </div>
-                            </div>
-                            <!--Project Item 1 ends-->
-                            <!--Project Items 2 Cards-->
-                            
-                        <div class="card">
-                            <div class="card-image card2"></div>
-                            <div class="card-text card2">
-                                <h5>E-Commerce</h5>
-                                <p>My Personal Portfolio to show off my projects. Language Used (HTML, CSS and JavaScript icons)</p>
-                            </div>
-                            <div class="card-links">
-                                <a href="#" class="links" id="#">View Project</a>
-                                <a href="#" class="links" id="#">View Code</a>
-                            </div>
-                        </div>
-                            <!--Project Item 2 ends-->
-                            <!--Project Items 3 Cards-->
-                        <div class="card">
-                            <div class="card-image card3"></div>
-                            <div class="card-text card3">
-                                <h5>Just For Fun</h5>
-                                <p>My Personal Portfolio to show off my projects. Language Used (HTML, CSS and JavaScript icons)</p>
-                            </div>
-                            <div class="card-links">
-                                <a href="#" class="links" id="#">View Project</a>
-                                <a href="#" class="links" id="#">View Code</a>
-                            </div>
-                        </div>
-                    
-                          
-                            
-                
-                            
-                        </div>
-
-                    </div>
-                        
-                </section>
-                <!---Skills Section-->
-                <section class="skills section hidden" id="skills">
-                    <div class="container">
-                        <div class="row">
-                            <div class="section-title padd-15">
-                                <h2>Skills</h2>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="skills-text">
-                                <p>Technologies I use</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="skills-items">
-                            <div class="skills-image1">
-                                <img src="Skills images/Html image.png" alt="html image">
-                            </div>
-                        </div>
-                        <!--temporary--
-                           <div class="skills-items">
-                            <div class="skills-image2">
-                                <img src="Skills images/CSS image.jpg" alt="css image">
-                            </div>
-                        </div>
-                        <div class="skills-items">
-                            <div class="skills-image3">
-                                <img src="Skills images/JavaScript image.jpg" alt="javascript image">
-                            </div>
-                        </div>
-                        </div>
-                        <div class="skills-items">
-                            <div class="skills-image4">
-                                <img src="Skills images/node js image.jpg" alt="node image">
-                            </div>
-                        </div>
-                        <div class="skills-items">
-                            <div class="skills-image1">
-                                <img src="Skills images/react image.jpg" alt="react image">
-                            </div>
-                        </div>
-                        <div class="skills-items2">
-                            <div class="skills-image">
-                                <img src="Skills images/React Native image.png" alt="react native image">
-                            </div>
-                        </div>
-                        <div class="skills-items">
-                            <div class="skills-image2">
-                                <img src="Skills images/Python image.jpg" alt="python image">
-                            </div>
-                        </div>
-                        <div class="skills-items">
-                            <div class="skills-image3">
-                                <img src="Skills images/SQL image.jpg" alt="sql image">
-                            </div>
-                        </div>
-                        
-                            <div class="skills-image">
-                                <img src="Skills images/Mongo DB.png" alt="html image">
-                            </div>
-                        </div>
-                    -->
-
-                    
-                    
-                        </div>
-                    </div>
-                </section>
-                <!--Contact Section-->
-                <section class="contact section">
-                    <div class="container">
-                        <div class="row">
-                            <div class="section-title padd-15">
-                            <h2>Say hi!</h2>
-                        </div>
-                        </div>
-                        <!--Contact Form-->
-                        <div class="row">
-                            <form class="contact-form padd-15">
-                                    <div class="form-item col-6 padd-15">
-                                        <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Enter Name">
-                                    </div>
-                                </div>
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Enter Email">
-                                </div>
-                            </div>
-                            <div class="form-item col-6 padd-15">
-                                <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Enter Subject">
-                            </div>
-                        </div>
-                        <div class="row">
-                        <div class="form-item col-6 padd-15">
-                            <div class="form-group">
-                            <textarea type="text" class="form-control" placeholder="Message"></textarea>
-                        </div>
-                    </div>
-                            </div>
-                            </form>
-                        </div>
-                        
-                        </div>
-                </section>
+        <!---
+        <div class="card">
+            <div class="slider-image">
+                <img src="Black pound day.png" alt="Black Pound day">
+            </div>
+            <div class="content">
+                <h2>Black Business Finder</h2>
+                <p>This site was created to make it easier for customers to find black businesses during Black Pound Day.</p>
+                <p>Technology Used</p>
+            </div>
+            <div class="slider-technology">
+                <img src="Skills images/react image.jpg" alt="">
+            </div>
+            <div class="card-links">
+                <i class="fa fa-desktop"></i>
+                <a href="#">VISIT SITE</a>
+                <i class="fa fa-github"></i>
+                <a href="#">VIEW CODE</a>
+            </div>
         </div>
-    </div>
+        </div>
+</section>
+-->
+<!--Portfolio End-->
+<!--Contact-->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="section-heading">
+            <h1>Say hi!</h1>
+            <h6>Let's work together</h6>
+        </div>
+        <form action="">
+            <label for="name">Enter Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name..." required>
+            <label for="email">Enter Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email..." required>
+            <label for="service">Services:</label>
+            <select name="services" id="service">
+                <option value="">Web Design</option>
+                <option value="">Web Development</option>
+                <option value="">E-Commerce</option>
+            </select>
+            <label for="subject">Subject:</label>
+            <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+        </div>
+        </section>
+        <!--Contact End-->
+        <!--Footer-->
+        <footer class="copyright">
+            <div class="up" id="up">
+                <i class="fa fa-chevron-up"></i>
+            </div>
+            <p>&copy; 2020 Desiree Usifo</p>
+        </footer>
+        <!--Footer End-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="main.js"></script>
 </body>
 </html>
