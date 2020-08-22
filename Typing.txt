@@ -1,0 +1,56 @@
+
+/* Home */
+.Desiree-picture{
+    width: 350px;
+    top: 60%;
+
+}
+
+.Thin-brown-border{
+    border-color:black;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 350px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.typewriter {
+   overflow: hidden;
+   border-right: .15em solid orange;
+   white-space: nowrap;
+   margin: 0 auto;
+   letter-spacing: .15em;
+   animation: typing 3.5s steps(40, end),
+   blink-caret .75s step-end infinite;
+}
+
+/* This creates the typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 60% }
+}
+
+button {
+    background-image: linear-gradient( #daa053, #e2a85d, #e8a956, #ea9c43, #D2661A );
+    box-shadow: 0 0px 2px 0px #F39C12 ;
+    color: floralwhite;
+    border-radius: 200px;
+    border-style: solid;
+    font-size: 20px;
+    letter-spacing: .15em;
+    margin: 12px;
+    padding: 5px;
+
+
+}
+
+
+HTML:
+
+ <center><img class="Desiree-picture Thin-brown-border" src="C:\Users\desir\OneDrive\Documents\Coding\Personal blog\Desus_HTML\Desus front pic.jpg" alt="Picture of Desiree"/></center>
+</div>
+<div class="typewriter">
+<center><h1>Hi, my name is Desiree.</h1></center>
