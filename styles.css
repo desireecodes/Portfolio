@@ -664,9 +664,16 @@ input[type="submit"]:hover{
 
     }
 
-    #toggle:checked + .menu{
+    /* Changed from adjacent sibling to general sibling selector because we need to put the checkbox element first
+    in order to hide the link and icon below, so the menu is no longer adjacent */
+    #toggle:checked ~ .menu{
         display: block;
         height: 100vh;
+    }
+
+    /* Hides the link and menu icon when the menu is open */
+    #toggle:checked ~ a, #toggle:checked ~ label{
+        display: none;
     }
 
 
