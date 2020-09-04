@@ -563,6 +563,7 @@ input[type="submit"]:hover{
         background-color: #0d0630;
     }
 
+
     header .logo{
         font-size: 1em;
     }
@@ -667,6 +668,9 @@ input[type="submit"]:hover{
         display: block;
         height: 100vh;
     }
+
+
+
 
 
 
