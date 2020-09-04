@@ -384,27 +384,19 @@ transform: scale(1.2);
 /*End service*/
 /*Portfolio Start*/
 
-.portfolio-img{
-    width: 20rem;
-    height: 20rem;
-    margin: 0 auto;
-    padding-top: 3em;
-}
 
 .card{
-    position: relative;
-    top: 5px;
-    width: 400px;
-    height: 550px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+    text-align: center;
     margin: 0 auto;
     background: #00001f;
     border: 1px solid black;
 }
 
 .card .card-img{
-    object-fit: cover;
     width: 100%;
-    height: 200px;
     opacity: 0.5;
 
 }
@@ -417,18 +409,11 @@ transform: scale(1.2);
     opacity: 1;
 }
 
-.card .card-details{
-    widows: 400px;
-    padding: 30px;
-    box-sizing: border-box;
-    text-align: center;
-}
+
 
 .card .card-details h6{
     font-size: 25px;
-    padding: 1rem;
     overflow: hidden;
-    text-align: center;
     font-weight: bolder;
     text-decoration: none;
 }
@@ -437,7 +422,6 @@ transform: scale(1.2);
     color: #8892b0;
     font-size: 15px;
     font-weight: lighter;
-    line-height: 1.43;
     letter-spacing: 0.5px;
     display: block;
     margin: 0px 0px;
@@ -467,14 +451,16 @@ transform: scale(1.2);
 
 /*Portfolio End */
 /*Contact Form Start */
+/*
 .container{
-    width: 70%;
+    width: 100%;
     max-width: 120rem;
     height: 100%;
     margin: 0 auto;
     position: relative;
 }
 
+*/
 .contact{
     background-color: #00001f;
     min-height: 100vh;
@@ -550,6 +536,10 @@ input[type="submit"]:hover{
 .copyright p{
     font-size: 1rem;
 }
+
+.social-media-footer{
+    display: none;
+}
 /*End footer*/
 
 /*Start animation */
@@ -612,7 +602,7 @@ input[type="submit"]:hover{
     }
 
     .social-media{
-        font-size: 2em;
+        font-size: 1em;
     }
 
 }
@@ -622,8 +612,9 @@ input[type="submit"]:hover{
         background-color: #0d0630;
     }
 
+
     header .logo{
-        font-size: 1em;
+       font-size: 1em;
     }
     header .logo:before{
         display:none;
@@ -650,7 +641,9 @@ input[type="submit"]:hover{
 
 
     .menu {
-        
+        padding-top: 200px;
+        padding-left: 20px;
+        font-size: 5rem;
         justify-content: center;
         width: 100%;
         display: none;
@@ -665,17 +658,14 @@ input[type="submit"]:hover{
 
     .menu ul li {
         text-align: center;
-        border: 1px solid lavender;
+        border-bottom: 1px solid lavender;
         margin: 0;
 
     }
 
     #toggle:checked + .menu{
         display: block;
-    }
-
-    #toggler:checked + .logo{
-        display: none;
+        height: 100vh;
     }
 
 
@@ -716,10 +706,6 @@ input[type="submit"]:hover{
         font-size: 1em;
     }
 
-    section {
-        padding-left: 60px;
-    }
-
     form{
         width: 100%;
     }
@@ -731,5 +717,43 @@ input[type="submit"]:hover{
     .up {
         right: 2rem;
         font-size: 1rem;
+        padding: 1rem;
     }
+
+    
+    .card .card-details h6{
+        font-size: 1em;
+    }
+    .card .card-details p {
+        font-size: 1em;
+    }
+
+    .social-media{
+        display: none;
+    }
+
+    .social-media-footer{
+        display: flex;
+        margin: 0px 110px 0px 110px;
+        cursor: pointer;
+        
+        
+    }
+
+    .social-media-footer i{
+        font-size: 2em;
+        padding-top: 1rem;
+        letter-spacing: 1rem;
+        
+    }
+    
+    .social-media-footer i{
+        color: lavender;
+        transition: color 650ms;
+    }
+
+    form label {
+        float: left;
+    }
+    
 }
