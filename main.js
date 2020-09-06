@@ -11,10 +11,11 @@ window.onscroll = function () {
 
 
 $(document).ready(function () {
-  $('nav a[href*="#"]').on('click', function () {
+  $('.menu a[href*="#"]').on('click', function () {
     $('html, body').animate({
       scrollTop: $($(this).attr('href')).offset().top - 100
     }, 2000);
+    $("#toggle").prop("checked", false);
   });
 
   $('#up').on('click', function () {
