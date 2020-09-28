@@ -390,12 +390,13 @@ transform: scale(1.2);
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1rem;
     text-align: center;
-    margin: 0 auto;
+    margin-top: 20px;
     background: #00001f;
     border: 1px solid black;
 }
 
 .card .card-img{
+    cursor: pointer;
     width: 100%;
     opacity: 0.5;
 
@@ -409,7 +410,10 @@ transform: scale(1.2);
     opacity: 1;
 }
 
-
+.card .card-details {
+    margin-top: 30px;
+    align-items: center;
+}
 
 .card .card-details h6{
     font-size: 25px;
