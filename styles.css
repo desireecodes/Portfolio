@@ -139,10 +139,11 @@ header ul li a {
 section {
     margin: 0 auto;
     min-height: 100vh;
-    padding: 100px 0;
-    width: 80%;
-    max-width: 1200px;
+    padding: 100px 12px;
+    width: 100%;
     overflow: hidden;
+    max-width: 1200px;
+    box-sizing: border-box;
 }
 
 /*Reusable End */
