@@ -32,11 +32,11 @@ img {
 
 .menu ul {
     text-decoration: none;
-    line-height: 70px;
+    line-height: 30px;
 }
 
 label {
-    margin: 0 40px 0 0;
+    margin: 0 0px 0 0;
     font-size: 26px;
     text-align: right;
     display: none;
@@ -139,9 +139,17 @@ header ul li a {
 section {
     margin: 0 auto;
     min-height: 100vh;
-    padding: 100px 0;
-    width: 80%;
+    padding: 100px 12px;
+    width: 100%;
     max-width: 1200px;
+    box-sizing: border-box;
+}
+
+#hero {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding-bottom: 12vh;
 }
 
 /*Reusable End */
@@ -156,10 +164,10 @@ section {
 
 }
 
-.hometext {
+/*.hometext {
     margin-top: 20rem;
 
-}
+} */
 
 .home .hometext h1{
     font-family: monospace;
@@ -335,7 +343,6 @@ transform: scale(1.2);
 }
 
 .my-skills{
-    margin-top: 10rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 2rem;
@@ -355,7 +362,7 @@ transform: scale(1.2);
     color: #8892b0;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin: 2rem -2rem 2rem 0;
+    margin: 2rem;
     font-size: 1.2em;
 }
 
@@ -453,18 +460,7 @@ transform: scale(1.2);
 }
 
 
-/*Portfolio End */
-/*Contact Form Start */
-/*
-.container{
-    width: 100%;
-    max-width: 120rem;
-    height: 100%;
-    margin: 0 auto;
-    position: relative;
-}
 
-*/
 .contact{
     background-color: #00001f;
     min-height: 100vh;
@@ -567,6 +563,12 @@ input[type="submit"]:hover{
         background-color: #0d0630;
     }
 
+    .menu ul {
+        text-decoration: none;
+        line-height: 40px;
+    }
+
+
 
     header .logo{
         font-size: 1em;
@@ -589,17 +591,18 @@ input[type="submit"]:hover{
        
     }
 
+
     .home {
-        width: 100%;
+        height: 10%;
 
     }
     .home .hometext h1{
-        font-size: 2.5em;
+        font-size: 2.8em;
         
     }
 
     .home .hometext h2{
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
 
     .home .hometext p{
@@ -607,8 +610,34 @@ input[type="submit"]:hover{
     }
 
     .social-media{
+        font-size: 1.8em;
+    }
+
+    .about-details p{
+        font-size: 0.9em;
+    }
+
+    .about-details center{
+        font-size: 0.8em;
+
+    }
+
+    .about-details ul {
+        font-size: 0.8em;
+    }
+
+    .skill h1 {
         font-size: 1em;
     }
+
+    .skill ul li {
+        font-size: 0.8em;
+    }
+
+    .card .card-extras i{
+        font-size: 1.8rem;
+    }
+
 
 }
 
@@ -616,6 +645,12 @@ input[type="submit"]:hover{
     body{
         background-color: #0d0630;
     }
+
+    .menu ul {
+        text-decoration: none;
+        line-height: 40px;
+    }
+
 
 
     header .logo{
@@ -630,7 +665,7 @@ input[type="submit"]:hover{
     }
 
     header ul{
-        font-size: 0.5em;
+        font-size: 0.8em;
         font-weight: bolder;
     }
     
@@ -648,7 +683,7 @@ input[type="submit"]:hover{
     .menu {
         padding-top: 200px;
         padding-left: 20px;
-        font-size: 5rem;
+        font-size: 3rem;
         justify-content: center;
         width: 100%;
         display: none;
@@ -657,7 +692,7 @@ input[type="submit"]:hover{
 
     .menu ul {
         display: block;
-        
+        font-size: 0.5em;
 
     }
 
@@ -665,6 +700,7 @@ input[type="submit"]:hover{
         text-align: center;
         border-bottom: 1px solid lavender;
         margin: 0;
+        padding: 15px;
 
     }
 
@@ -680,9 +716,13 @@ input[type="submit"]:hover{
         display: none;
     }
 
+    .about-details {
+        font-size: 1em;
+    }
 
-
-
+    form label {
+        font-size: 1rem;
+    }
 
 
     .home {
@@ -707,7 +747,7 @@ input[type="submit"]:hover{
     }
 
     .heading{
-        font-size: 0.5em;
+        font-size: 0.7em;
 
     }
 
@@ -717,22 +757,34 @@ input[type="submit"]:hover{
         text-align: left;
     }
 
-    .about-details{
-        font-size: 1em;
+    .about-details p{
+        font-size: 0.8em;
+    }
+
+    .about-details center{
+        font-size: 0.8em;
+
+    }
+
+    .about-details ul {
+        font-size: 0.8em;
     }
 
     form{
         width: 100%;
     }
 
-    form label {
-        font-size: 1em;
-    }
 
     .up {
         right: 2rem;
-        font-size: 1rem;
-        padding: 1rem;
+        padding: 0.5rem;
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .up i {
+        font-size: 1.5rem;
+
     }
 
     
@@ -740,7 +792,7 @@ input[type="submit"]:hover{
         font-size: 1em;
     }
     .card .card-details p {
-        font-size: 1em;
+        font-size: 0.8em;
     }
 
     .social-media{
@@ -769,6 +821,62 @@ input[type="submit"]:hover{
 
     form label {
         float: left;
+        font-size: 0.8em;
     }
+
+    form {
+        font-size: 1em;
+    }
+
+    input {
+        padding: 0.8em;
+    }
+
+
+
+    .my-skills {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-gap: 1.5rem;
+}
+
+    .skill h1 {
+        font-size: 1em;
+    }
+
+    .skill ul li {
+        font-size: 0.8em;
+    }
+
+    .icon-container{
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .icon-container i{
+        font-size: 4rem;
+    }
+
+    .card .card-extras i{
+        font-size: 2rem;
+    }
+
+    .about-details ul {
+        grid-template-columns: 8rem 8rem;
+    }
+
     
+}
+
+@media screen and (max-device-width: 320px) {
+    .card{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 1rem;
+
+}
+
+@media screen and (max-device-width: 400px) {
+    .my-skills {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 2rem;
+    }
 }
