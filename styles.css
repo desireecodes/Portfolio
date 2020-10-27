@@ -139,8 +139,8 @@ header ul li a {
 section {
     margin: 0 auto;
     min-height: 100vh;
-    padding: 100px 12px;
-    width: 100%;
+    padding: 0px 12px 100px;
+    width: 80%;
     max-width: 1200px;
     box-sizing: border-box;
 }
@@ -149,7 +149,7 @@ section {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    padding-bottom: 12vh;
+    padding-bottom: 17vh;
 }
 
 /*Reusable End */
@@ -394,7 +394,7 @@ transform: scale(1.2);
 
 .card{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 1rem;
     text-align: center;
     margin-top: 20px;
@@ -457,6 +457,7 @@ transform: scale(1.2);
 .card .card-extras ul {
     padding: 2em;
     color: #e6f9af
+
 }
 
 
@@ -565,9 +566,8 @@ input[type="submit"]:hover{
 
     .menu ul {
         text-decoration: none;
-        line-height: 40px;
+        line-height: 30px;
     }
-
 
 
     header .logo{
@@ -636,6 +636,7 @@ input[type="submit"]:hover{
 
     .card .card-extras i{
         font-size: 1.8rem;
+        
     }
 
 
@@ -681,11 +682,11 @@ input[type="submit"]:hover{
 
 
     .menu {
-        padding-top: 200px;
-        padding-left: 20px;
+        padding-top: 150px;
+        padding-left: 50px;
         font-size: 3rem;
         justify-content: center;
-        width: 100%;
+        width: 80%;
         display: none;
         
     }
@@ -867,16 +868,17 @@ input[type="submit"]:hover{
     
 }
 
-@media screen and (max-device-width: 320px) {
-    .card{
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        grid-gap: 1rem;
-
+@media screen and (max-device-width: 300px) {
 }
 
+@media screen and (max-device-width: 370px) {
+    .card{
+        grid-template-columns: repeat(auto-fit, 150px, 1fr));
+
+} 
 @media screen and (max-device-width: 400px) {
     .my-skills {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         grid-gap: 2rem;
     }
 }
